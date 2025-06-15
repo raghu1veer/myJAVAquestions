@@ -1,0 +1,37 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        // your code goes here
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for(int i =0;i<t;i++){
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            int z = sc.nextInt();
+            int r = x*y;
+            if(x<=3) {
+                System.out.println(r);
+            }else{
+
+                    if(x%3 == 0){
+                        int d = x/3;
+                        int a = r + d*(z) -z;
+                        System.out.println(a);
+                    }else{
+                        int d1 = x/3;
+                        int r1 = r + d1*z;
+                        System.out.println(r1);
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
